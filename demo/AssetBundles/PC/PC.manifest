@@ -1,0 +1,9 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.2.7f2
+CRC: 3560369790
+HashAppended: 0
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: model
+      Dependencies: {}

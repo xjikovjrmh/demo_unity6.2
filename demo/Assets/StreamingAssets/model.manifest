@@ -1,16 +1,16 @@
 ManifestFileVersion: 0
 UnityVersion: 6000.2.7f2
-CRC: 1372561659
+CRC: 2705184048
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6f992ad03a90f0ebcba3e4e90629ba31
+    Hash: 773afe4c969158a9b304f8da7926bbc2
   TypeTreeHash:
     serializedVersion: 2
     Hash: 293b28f8181f6f3800eb77e7c708b304
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 5b0939bfd27c29e0d18b08b3ed0b546f
+    Hash: 3106f2afaf0f0af6cade43339616abcf
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -31,5 +31,6 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Prefabs/tunnel.fbx
 - Assets/Prefabs/Cylinder.prefab
 Dependencies: []

@@ -1110,9 +1110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 566b89fe22861fa4aa1af81a1f66f56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoTunnelUI
-  spawner: {fileID: 835170105}
-  toggle: {fileID: 2006225666}
-  statusText: {fileID: 964271912}
 --- !u!4 &597391728
 Transform:
   m_ObjectHideFlags: 0
@@ -1739,16 +1736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ae43238224f85e40acd357ff9680e75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AutoTunnelSpawner
-  prefab: {fileID: 7277302461976629758, guid: bf001863cb679b0458560743be516881, type: 3}
-  spawnPoint: {fileID: 0}
-  spawnInterval: 0.5
-  moveSpeed: 2
-  cylinderHeight: 2
-  autoEnabled: 0
-  destroyAfterDistance: 50
-  timer: 0
-  spawned: []
-  nextSpawnPos: {x: 0, y: 0, z: 0}
 --- !u!4 &835170106
 Transform:
   m_ObjectHideFlags: 0

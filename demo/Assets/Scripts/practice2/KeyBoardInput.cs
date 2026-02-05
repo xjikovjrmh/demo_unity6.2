@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 public class KeyBoardInput : MonoBehaviour
 {
     private Vector3 spawnOffset = new Vector3(0, 0, 5); // 每次生成的偏移
-    public GameObject CylinderPrefab;
+    private GameObject CylinderPrefab;
     
     [Header("生成起始点（建议拖入空物体作为参考点）")]
     private Vector3 spawnOriginPos=new Vector3(0,0,0); // 可选：用场景中的一个空物体作为起点
@@ -46,7 +46,8 @@ public class KeyBoardInput : MonoBehaviour
             {
                 //仅加载预制体资源，不做任何修改
                 CylinderPrefab = ABMgr.GetInstance().LoadRes<GameObject>("model", "tunnel");
-                
+                //添加碰撞体
+                CylinderPrefab.AddComponent<MeshCollider>();
                 CylinderPrefab.transform.rotation=Quaternion.Euler(0,0,0);
                 
                 if (CylinderPrefab == null)
@@ -79,7 +80,7 @@ public class KeyBoardInput : MonoBehaviour
             if (spawnedObj.GetComponent<MeshCollider>() == null)
             {
                 MeshCollider collider = spawnedObj.AddComponent<MeshCollider>();
-                collider.convex = true; // 必须勾
+                // collider.convex = true; // 必须勾
             }
 
             // 累加下一次生成位置

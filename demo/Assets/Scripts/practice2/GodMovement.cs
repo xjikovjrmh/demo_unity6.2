@@ -3,6 +3,9 @@ using UnityEngine;
 public class GodMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    //状态
+    public bool isGodView = true;
+    
     [Header("MOvement")]
     public float moveSpeed=10f;
 
@@ -66,7 +69,7 @@ public class GodMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-        MovePlayer();
+        if(isGodView)MovePlayer();
     }
     private void MyInput()
     {
